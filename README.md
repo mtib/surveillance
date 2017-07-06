@@ -26,6 +26,13 @@ See env.sh
 
 I'm using crontab
 
+## Requirements
+
+- ffmpeg (for the shutter and timelapse)
+- python3 (only for the managing files and hosting)
+- imagemagick (for cleaning similar pictures)
+- *some kind of shell*
+
 ## Roadmap
 
 - [ ] reworking the markdown file
