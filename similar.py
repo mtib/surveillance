@@ -36,8 +36,8 @@ def compareAll(folder):
         print("{:3d}%".format(math.ceil(float(i)/(len(images)-sep)*100)), images[i], "to", images[i+sep], "->", signal)
     return (extremsig, extremimg)
 
-def compareDeleteThree(folder, delThresh=30.0):
-    images = getFilesWith(folder, ".jpg")
+def compareDeleteThree(folder, delThresh=30.0, limitTo=300):
+    images = getFilesWith(folder, ".jpg")[-limitTo:]
     compare1 = []
     compare2 = []
 
